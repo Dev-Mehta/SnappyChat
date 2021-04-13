@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "125622022830",
+    "project_id": "snappychat-92fd2",
+    "storage_bucket": "snappychat-92fd2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125622022830:android:5cb18518f71dbafdb1733f",
+        "android_client_info": {
+          "package_name": "com.devmehta.snappychat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125622022830-gqj48mqpemh546q0ag4ho1mh6kfhsi3h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devmehta.snappychat",
+            "certificate_hash": "1bd7b163b85ff20549f5ccd9a7861db2be8c1768"
+          }
+        },
+        {
+          "client_id": "125622022830-pbn8dh12or2m2avrk8le6juql73lrf19.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAZBUzRgz2S38z7PILxDlKRk_DtQWMZqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125622022830-pbn8dh12or2m2avrk8le6juql73lrf19.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
