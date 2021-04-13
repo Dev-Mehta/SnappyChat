@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Authentication.LoginActivity">
+
+    <TextView
+        android:id="@+id/welcome_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/sf_pro_semibold"
+        android:text="Welcome Back😊😊"
+        android:textAllCaps="true"
+        android:textColor="#99EBEBF5"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/sf_pro_bold"
+        android:text="Login to SnappyChat"
+        android:textColor="@color/color_white"
+        android:textSize="34dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome_back" />
+
+    <TextView
+        android:id="@+id/subtitle_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/sf_pro_regular"
+        android:gravity="center"
+        android:textColor="@color/color_white"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_text" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="#B3545458"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitle_text" />
+
+    <LinearLayout
+        android:id="@+id/editTextPhoneLayout"
+        android:layout_width="325dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider">
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:fontFamily="@font/sf_pro_regular"
+            android:gravity="center_vertical"
+            android:text="Email"
+            android:textColor="@color/color_white"
+            />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@color/color_transparent"
+            android:fontFamily="@font/sf_pro_regular"
+            android:gravity="center_vertical"
+            android:hint="Enter Email"
+            android:inputType="textEmailAddress"
+            android:autofillHints="username"
+            android:textColor="@color/color_white"
+            android:textColorHint="#99EBEBF5"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/helper_password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:text="Password must contain letters, digit and a special character and must be atleast 8 characters long"
+        android:textColor="#99EBEBF5"
+        app:layout_constraintTop_toBottomOf="@id/editTextPasswordLayout"
+        />
+
+    <View
+        android:id="@+id/divider_form"
+        android:layout_width="325dp"
+        android:layout_height="1dp"
+        android:background="#B3545458"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextPhoneLayout" />
+
+    <LinearLayout
+        android:id="@+id/editTextPasswordLayout"
+        android:layout_width="325dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider_form">
+
+        <TextView
+            android:id="@id/label"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:fontFamily="@font/sf_pro_regular"
+            android:gravity="center_vertical"
+            android:text="Password"
+            android:textColor="@color/color_white"
+            />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@color/color_transparent"
+            android:fontFamily="@font/sf_pro_regular"
+            android:gravity="center_vertical"
+            android:hint="Enter Password"
+            android:autofillHints="password"
+            android:inputType="textPassword"
+            android:textColor="@color/color_white"
+            android:textColorHint="#99EBEBF5"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="#B3545458"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/helper_password" />
+
+    <Button
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="325dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#fffc00"
+        android:fontFamily="@font/sf_pro_bold"
+        android:letterSpacing="-0.02"
+        android:onClick="loginUser"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/color_black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/goto_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/goto_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/goto_register_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_regular"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.01"
+            android:lineHeight="20dp"
+            android:text="Don't have an account?"
+            android:textColor="@color/color_white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/goto_register_text"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/sf_pro_semibold"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.01"
+            android:lineHeight="20dp"
+            android:onClick="signUpUser"
+            android:text="Register Now"
+            android:textColor="#fffc00"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/network_error"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#FF453A"
+        android:text="Make sure you are connected to internet"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:fontFamily="@font/sf_pro_semibold"
+        android:textColor="@color/color_white"
+        android:includeFontPadding="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="visible"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
